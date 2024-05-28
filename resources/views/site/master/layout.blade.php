@@ -73,9 +73,9 @@
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item"> <a class="nav-link active" aria-current="page" href=" {{ route('site.home') }} ">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link active" aria-current="page" href="{{ route('site.courses') }}">Cursos</a> </li>
-          <li class="nav-item"> <a class="nav-link active" aria-current="page" href="{{ route('site.contact') }}">Contacto</a> </li>
+          <li class="nav-item"> <a class="nav-link {{ (Route::current()->getName() === 'site.home' ? 'active' : '' ) }} " aria-current="page" href=" {{ route('site.home') }} ">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link {{ (Route::current()->getName() === 'site.courses' ? 'active' : '' ) }} " aria-current="page" href="{{ route('site.courses') }}">Cursos</a> </li>
+          <li class="nav-item"> <a class="nav-link {{ (Route::current()->getName() === 'site.contact' ? 'active' : '' ) }} " aria-current="page" href="{{ route('site.contact') }}">Contacto</a> </li>
         </ul>
       </div>
     </div>
